@@ -1,0 +1,48 @@
+@use "@/styles/_variables" as *;
+@import "@/styles/customize.scss";
+
+.container {
+  @include md-block {
+    margin: 0 10px;
+  }
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include md-block {
+    gap: 20px;
+  }
+}
+
+.imageBlock {
+  height: 400px;
+  margin-right: -150px;
+
+  @include md-block {
+    display: none;
+  }
+}
+
+.notesContainer {
+  margin-top: 40px;
+  background-color: $primary-grey;
+  border-radius: $border-radius;
+  display: flex;
+  gap: 30px;
+
+  padding: 60px;
+
+  @include md-block {
+    padding: 28px;
+    border-radius: $border-radius-mobile;
+  }
+}
+
+.notesBox {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

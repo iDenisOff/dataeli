@@ -1,0 +1,112 @@
+@use "@/styles/_variables" as *;
+@import "@/styles/customize.scss";
+
+.card {
+    background-color: $primary-grey;
+    padding: $spacing-xxl;
+    height: 491px;
+    border-radius: $border-radius;
+
+    @include xxl-block {
+        border-radius: 0;
+        padding: $spacing-md;
+    }
+
+    @include md-block {
+        height: 280px;
+    }
+}
+
+.title {
+    display: block;
+    margin-bottom: $spacing-sm;
+}
+
+.fullDescription {
+    margin-right: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.nextButton {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: $spacing-xl;
+    right: $spacing-xl;
+
+    @include lg-block {
+        bottom: $spacing-sm;
+        right: $spacing-sm;
+    }
+
+    opacity: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        border-radius: 50px;
+        background-color: $primary-color-opacity;
+
+        .nextButtonIcon {
+            color: white;
+        }
+    }
+
+    &Icon {
+        color: $primary-color;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.contentWrapper {
+    pointer-events: none;
+
+    @include md-block {
+        position: relative;
+        overflow: hidden;
+        height: auto;
+        min-height: 150px;
+    }
+}
+
+.slide {
+
+    @include md-block {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        opacity: 1;
+    }
+}
+
+.slideIn {
+
+    @include md-block {
+        transform: translateX(0);
+        opacity: 1;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.slideOut {
+
+    @include md-block {
+        transform: translateX(-100%);
+        opacity: 0;
+        z-index: 1;
+    }
+}
+
+.fullSlide {
+    transform: translateX(100%);
+    opacity: 0;
+    z-index: 1;
+}

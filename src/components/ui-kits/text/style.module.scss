@@ -1,0 +1,48 @@
+@use "@/styles/_variables" as *;
+@import "@/styles/customize.scss";
+
+.container {
+  white-space: pre-line;
+}
+
+.s {
+  font-size: 18px;
+
+  @include md-block {
+    font-size: 12px;
+  }
+
+}
+
+.m {
+  font-size: 24px;
+
+  @include md-block {
+    font-size: 18px;
+  }
+}
+
+.l {
+  font-size: 32px;
+
+  @include md-block {
+    font-size: 21px;
+  }
+}
+
+.xl {
+  font-size: 56px;
+
+  @include md-block {
+    font-size: 32px;
+  }
+}
+
+.primary {
+  color: black;
+}
+
+.secondary {
+  color: #F47749;
+  font-weight: 500;
+}

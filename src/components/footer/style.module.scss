@@ -1,0 +1,89 @@
+@use "@/styles/_variables" as *;
+@import "@/styles/customize.scss";
+
+.container {
+  background-color: $primary-grey;
+  border-top-left-radius: $border-radius-mobile;
+  border-top-right-radius: $border-radius-mobile;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $spacing-sm;
+  margin-top: $spacing-xxl;
+
+  @include xxl-block-min {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    padding: $spacing-lg $spacing-sm;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+  }
+}
+
+.logo {
+  width: 103px;
+  height: auto;
+  margin-bottom: $spacing-md;
+
+  @include xxl-block-min {
+    width: 50%;
+    justify-self: center;
+    margin-bottom: 0;
+  }
+}
+
+.info {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+  align-items: start;
+
+  @include xxl-block-min {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+  }
+}
+
+.additionalInfo {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+
+  @include xxl-block-min {
+    align-self: end;
+  }
+}
+
+.contacts {
+  span {
+    display: block;
+    margin-bottom: $spacing-md;
+  }
+
+  span>a {
+    text-decoration: none;
+    color: black;
+  }
+
+  &IconContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: $spacing-xs;
+
+    :last-child {
+      margin-left: 16px;
+    }
+
+    &Icon {
+      @include xxl-block-min {
+        width: 50px;
+      }
+    }
+  }
+
+  @include xxl-block-min {
+    align-self: center;
+  }
+}

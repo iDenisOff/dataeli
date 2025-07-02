@@ -1,0 +1,37 @@
+@use "@/styles/_variables" as *;
+@import "@/styles/customize.scss";
+
+.container {
+  background-color: $primary-grey;
+  border-radius: $border-radius;
+  padding: 60px 140px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  @include md-block {
+    padding: 28px 28px;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 10px;
+    border-radius: $border-radius-mobile;
+  }
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include md-block {
+    gap: 20px;
+  }
+}
+
+.imageBlock {
+  height: 400px;
+
+  @include md-block {
+    display: none;
+  }
+}

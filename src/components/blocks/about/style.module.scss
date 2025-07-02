@@ -1,0 +1,23 @@
+@use "@/styles/_variables" as *;
+@import "@/styles/customize.scss";
+
+.wrapper {
+  padding: 0 $spacing-xs;
+  overflow: hidden;
+}
+
+.title {
+  margin-left: $spacing-md;
+  margin-bottom: $spacing-md;
+  margin-top: $spacing-lg;
+  display: block;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  @include xxl-block-min {
+    margin-top: $spacing-xxl;
+    margin-bottom: $spacing-lg;
+  }
+}

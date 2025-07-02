@@ -1,0 +1,24 @@
+@use "@/styles/_variables" as *;
+@import "@/styles/customize.scss";
+
+.title {
+    margin-left: $spacing-md;
+    margin-bottom: $spacing-md;
+    display: block;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xs;
+
+    &Card {
+        position: relative;
+    }
+
+    @include xxl-block-min {
+        gap: $spacing-md;
+    }
+
+}

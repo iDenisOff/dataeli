@@ -1,0 +1,15 @@
+@use "@/styles/_variables" as *;
+@import "@/styles/customize.scss";
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-sm;
+}
+
+.title {
+    margin-left: $spacing-md;
+    margin-bottom: $spacing-md;
+    display: block;
+}

@@ -1,0 +1,36 @@
+@use "@/styles/_variables" as *;
+@import "@/styles/customize.scss";
+
+.container {
+  padding: $spacing-md;
+  background-color: $primary-grey;
+  border-radius: $border-radius-mobile;
+
+  @include xxl-block-min {
+    padding: $spacing-lg;
+  }
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $spacing-md;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.title {
+  margin-bottom: $spacing-sm;
+
+  @include xxl-block-min {
+    margin-bottom: $spacing-md;
+  }
+}
+
+.text {
+  @include xxl-block-min {
+    margin-bottom: $spacing-lg;
+  }
+}

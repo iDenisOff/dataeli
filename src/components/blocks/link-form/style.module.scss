@@ -1,0 +1,83 @@
+@use "@/styles/_variables" as *;
+@import "@/styles/customize.scss";
+
+.wrapper {
+    padding: 0 $spacing-sm;
+
+    @include xxl-block-min {
+        padding: 0;
+    }
+}
+
+.title {
+    margin-left: $spacing-md;
+    margin-bottom: $spacing-md;
+    display: block;
+
+    @include xxl-block-min {
+        margin-bottom: $spacing-lg;
+    }
+}
+
+.inputContainer {
+    margin-bottom: $spacing-xs;
+
+    &:last-of-type {
+        margin-bottom: $spacing-md;
+    }
+
+    @include xxl-block-min {
+        margin-bottom: $spacing-md;
+
+        &:last-of-type {
+            margin-bottom: $spacing-lg;
+        }
+    }
+}
+
+.input {
+    padding: $spacing-sm;
+    border: 0;
+    border-bottom: 1px solid $black-25-percent;
+    border-radius: $border-radius-mobile;
+    font-size: $font-size-m;
+    color: black;
+    background-color: #fff;
+    width: 100%;
+
+    &::placeholder {
+        color: $black-50-percent;
+    }
+}
+
+.input {
+    transition: border-color 0.2s ease;
+
+    &:focus {
+        outline: none;
+        border-color: $primary-color;
+    }
+
+    &.error {
+        border-color: red;
+        background-color: #ffe5e5;
+    }
+}
+
+.submitButton {
+    padding: $spacing-sm $spacing-xs;
+    width: 100%;
+    margin-bottom: $spacing-md;
+
+    span {
+        font-size: $font-size-m;
+    }
+}
+
+.warnMessage {
+    color: $black-25-percent;
+
+    a {
+        color: $black-25-percent;
+    }
+}

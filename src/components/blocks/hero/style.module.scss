@@ -1,0 +1,63 @@
+@use "@/styles/_variables" as *;
+@import "@/styles/customize.scss";
+
+.background {
+  background-color: $primary-grey;
+  position: absolute;
+  top: 60;
+  left: 0;
+  width: 100vw;
+  height: 854px;
+  z-index: -1;
+
+  @include md-block {
+    height: 402px;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $spacing-sm;
+  padding: 140px $spacing-md;
+  height: 854px;
+
+  @include xl-block {
+    grid-template-columns: 1fr;
+  }
+
+  @include md-block {
+    height: 402px;
+    padding: $spacing-sm;
+  }
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-lg;
+}
+
+.heroLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &Image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @include xl-block {
+    display: none;
+  }
+}
+
+.button {
+  width: 456px;
+
+  @include sm-block {
+    width: 300px;
+  }
+
+}

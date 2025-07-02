@@ -1,0 +1,69 @@
+@mixin wrapper($spacing: 80px, $max-width: 1520px) {
+    margin: #{$spacing} auto;
+    margin-top: 0;
+    max-width: $max-width;
+
+    @media (max-width: 450px) {
+        max-width: 450px;
+    }
+}
+
+@mixin xs-block() {
+    @media screen and (max-width: $breakpoint-xs) {
+        @content;
+    }
+}
+
+@mixin sm-block() {
+    @media screen and (max-width: $breakpoint-sm) {
+        @content;
+    }
+}
+
+@mixin md-block() {
+    @media screen and (max-width: $breakpoint-md) {
+        @content;
+    }
+}
+
+@mixin lg-block() {
+    @media screen and (max-width: $breakpoint-lg) {
+        @content;
+    }
+}
+
+@mixin xl-block() {
+    @media screen and (max-width: $breakpoint-xl) {
+        @content;
+    }
+}
+
+@mixin xxl-block() {
+    @media screen and (max-width: $breakpoint-xxl) {
+        @content;
+    }
+}
+
+@mixin md-block-min() {
+    @media screen and (min-width: $breakpoint-md) {
+        @content;
+    }
+}
+
+@mixin lg-block-min() {
+    @media screen and (min-width: $breakpoint-lg) {
+        @content;
+    }
+}
+
+@mixin xl-block-min() {
+    @media screen and (min-width: $breakpoint-xl) {
+        @content;
+    }
+}
+
+@mixin xxl-block-min() {
+    @media screen and (min-width: $breakpoint-xxl) {
+        @content;
+    }
+}

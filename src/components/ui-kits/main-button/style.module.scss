@@ -1,0 +1,28 @@
+@use "@/styles/_variables" as *;
+@import "@/styles/customize.scss";
+
+.container {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $border-radius;
+  border: 2px solid $primary-color-opacity;
+  padding: $spacing-sm;
+  cursor: pointer;
+
+  @include md-block {
+    border-radius: $border-radius-mobile;
+    padding: $spacing-xs;
+  }
+}
+
+.text {
+  margin-top: -1px;
+  font-size: $font-size-m;
+  color: $primary-color;
+
+  @include md-block {
+    font-size: $font-size-s;
+  }
+}

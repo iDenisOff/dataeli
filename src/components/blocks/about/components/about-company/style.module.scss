@@ -1,0 +1,57 @@
+@use "@/styles/_variables" as *;
+@import "@/styles/customize.scss";
+
+.container {
+  display: block;
+  position: relative;
+  margin-bottom: $spacing-md;
+}
+
+.title {
+  margin-left: $spacing-md;
+  margin-bottom: $spacing-md;
+  margin-top: $spacing-lg;
+  display: block;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  @include xxl-block-min {
+    margin-bottom: $spacing-lg;
+    margin-top: $spacing-xl;
+  }
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+
+  @include md-block-min {
+    width: 400px;
+    height: auto;
+    left: 600px;
+    top: 0px;
+  }
+}
+
+.line {
+  border: none;
+  height: 1px;
+  background-color: $primary-color-opacity;
+  margin: $spacing-sm 0;
+
+  @include xxl-block-min {
+    margin: $spacing-md 0;
+    width: 70%;
+  }
+}
+
+.lastBlock {
+  margin-bottom: $spacing-md;
+
+  @include xxl-block-min {
+    margin-bottom: $spacing-xxl;
+  }
+}
