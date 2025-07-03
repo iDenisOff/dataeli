@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.tsx',
@@ -34,7 +35,7 @@ module.exports = {
             options: {
               modules: {
                 localIdentName: '[name]__[local]--[hash:base64:5]',
-                exportOnlyLocals: false, // Ключевой параметр!
+                exportOnlyLocals: false,
               },
             },
           },
@@ -46,6 +47,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
+    }),
+    new CopyPlugin({
+      patterns: [{ from: './src/public/locales', to: 'public/locales' }],
     }),
   ],
   devServer: {

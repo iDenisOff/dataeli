@@ -1,8 +1,7 @@
 import styles from './style.module.scss';
-import logo from '../../assets/logo.svg';
-import whatsapp from '../../assets/whatsapp-white.svg';
-import telegram from '../../assets/telegram-white.svg';
+import logo from '@/public/assets/logo.svg';
 import { Text } from '@/components/ui-kits/text';
+import { ContactsView } from '../contacts';
 
 export function FooterView(): React.ReactElement {
   return (
@@ -15,16 +14,7 @@ export function FooterView(): React.ReactElement {
           </Text>
           <Text size={'m'}>support@dataeli.com</Text>
           <div className={styles.contactsIconContainer}>
-            <img
-              src={whatsapp}
-              alt="whatsapp"
-              className={styles.contactsIconContainerIcon}
-            />
-            <img
-              src={telegram}
-              alt="telegram"
-              className={styles.contactsIconContainerIcon}
-            />
+            <ContactsView withPhone={false} />
           </div>
         </div>
         <div className={styles.additionalInfo}>

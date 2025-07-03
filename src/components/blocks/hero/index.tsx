@@ -1,8 +1,9 @@
 import { MainButton } from '@/components/ui-kits/main-button';
 import styles from './style.module.scss';
-import heroLogo from '../../../assets/hero-logo.svg';
+import heroLogo from '@/public/assets/hero-logo.svg';
 import { HeroTitle } from '@/components/blocks/hero/components/hero-title/hero-title';
 import { Text } from '@/components/ui-kits/text';
+import { HashLink } from 'react-router-hash-link';
 
 export function HeroBlockView(): React.ReactElement {
   return (
@@ -11,11 +12,13 @@ export function HeroBlockView(): React.ReactElement {
       <div className={styles.container}>
         <div className={styles.banner}>
           <HeroTitle />
-          <MainButton className={styles.button}>
-            <Text color="secondary" size="m">
-              обратиться к нам
-            </Text>
-          </MainButton>
+          <HashLink smooth to="#linkForm">
+            <MainButton className={styles.button}>
+              <Text color="secondary" size="m">
+                обратиться к нам
+              </Text>
+            </MainButton>
+          </HashLink>
         </div>
         <div className={styles.heroLogo}>
           <img

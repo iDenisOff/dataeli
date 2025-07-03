@@ -1,6 +1,6 @@
 import styles from './style.module.scss';
 import { Text } from '@/components/ui-kits/text';
-import backgroundShapeOne from '@/assets/background-shape-one.png';
+import backgroundShapeOne from '@/public/assets/background-shape-one.png';
 import { aboutCompanyData } from './data';
 
 export default function AboutCompany(): React.ReactElement {

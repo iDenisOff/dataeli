@@ -16,14 +16,3 @@
         gap: $spacing-md;
     }
 }
-
-.messageButton {
-    display: none;
-
-    @include xl-block-min {
-        display: block;
-        position: fixed;
-        bottom: 60px;
-        right: 80px;
-    }
-}

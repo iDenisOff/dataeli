@@ -1,0 +1,13 @@
+@use "@/styles/_variables" as *;
+@import "@/styles/customize.scss";
+
+.container {
+    display: none;
+
+    @include xl-block-min {
+        display: block;
+        position: fixed;
+        bottom: 60px;
+        right: 80px;
+    }
+}

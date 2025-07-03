@@ -1,0 +1,10 @@
+@use "@/styles/_variables" as *;
+@import "@/styles/customize.scss";
+
+.contacts {
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+}

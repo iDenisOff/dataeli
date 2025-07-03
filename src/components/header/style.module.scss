@@ -2,6 +2,7 @@
 @import "@/styles/customize.scss";
 
 .container {
+  @include wrapper(0);
   background-color: white;
   height: 60px;
   display: flex;
@@ -9,6 +10,7 @@
   align-items: center;
   position: relative;
   padding: 0 200px;
+  z-index: 10;
 
   @include md-block {
     padding: 0 $spacing-xs;
@@ -16,23 +18,21 @@
 }
 
 .contacts {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  &__container {
+    position: absolute;
+    right: 10px;
 
-  position: absolute;
-  right: 200px;
+    :last-child {
+      margin-left: 16px;
+    }
 
-  :last-child {
-    margin-left: 16px;
-  }
+    @include md-block {
+      display: none;
+    }
 
-  @include md-block {
-    display: none;
-  }
-
-  @include xxl-block {
-    right: 60px;
+    @include xxl-block {
+      right: 60px;
+    }
   }
 }
 
@@ -41,7 +41,50 @@
   right: 24px;
   display: none;
 
+  cursor: pointer;
+
   @include md-block {
     display: block;
+  }
+}
+
+.burgerList {
+
+  @include md-block-min {
+    display: none;
+  }
+
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  border-bottom-left-radius: $border-radius-mobile;
+  border-bottom-right-radius: $border-radius-mobile;
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.3s ease,
+  opacity 0.3s ease;
+  z-index: -1;
+
+  &[data-open="true"] {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 2;
+  }
+
+  &__item {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 50px;
   }
 }

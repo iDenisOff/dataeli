@@ -2,7 +2,8 @@ import React from 'react';
 import { HeaderView } from '../header';
 import styles from './style.module.scss';
 import { FooterView } from '../footer';
-import messageIcon from '../../assets/message-icon.svg';
+import { FloatButton } from '../ui-kits/float-button';
+
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -13,11 +14,7 @@ export function Layout({ children }: LayoutProps): React.ReactElement {
       <HeaderView />
       <main className={styles.main}>{children}</main>
       <FooterView />
-      <img
-        src={messageIcon}
-        alt="messageIcon"
-        className={styles.messageButton}
-      />
+      <FloatButton />
     </div>
   );
 }
