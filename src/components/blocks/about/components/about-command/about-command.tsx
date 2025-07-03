@@ -1,24 +1,25 @@
 import styles from './style.module.scss';
 import { Text } from '@/components/ui-kits/text';
-import { aboutCommandData } from './data';
+import { useTranslation } from 'react-i18next';
 
 export default function AboutCommand(): React.ReactElement {
+  const { t } = useTranslation();
+  // length from i18n
+  const ABOUT_COMMAND_COUNT = 4;
   return (
     <div className={styles.container}>
       <Text size={'m'} className={styles.block}>
-        ключевая особенность нашей компании в специалистах с реальным
-        практическим опытом в сфере кибербезопасности
+        {t(`blocks.about.4.preinfo`)}
       </Text>
       <div className={styles.block}>
-        {aboutCommandData.map((value, index) => (
+        {[...Array(ABOUT_COMMAND_COUNT)].map((_, index) => (
           <Text key={index} size={'m'} className={styles.point}>
-            {value.text}
+            {t(`blocks.about.4.data.${index}.text`)}
           </Text>
         ))}
       </div>
       <Text size={'m'} className={styles.block}>
-        мы постоянно учимся, делимся знаниями и оттачиваем мастерство, чтобы
-        оставаться на передовой цифровой безопасности
+        {t(`blocks.about.4.postinfo`)}
       </Text>
     </div>
   );

@@ -2,8 +2,10 @@ import { useRef } from 'react';
 import { MainButton } from '@/components/ui-kits/main-button';
 import styles from './style.module.scss';
 import { Text } from '../../ui-kits/text';
+import { useTranslation } from 'react-i18next';
 
 export default function LinkFormBlock(): React.ReactElement {
+  const { t } = useTranslation();
   const formRef = useRef<HTMLFormElement>(null);
 
   const handleSubmit = (event: React.FormEvent) => {
@@ -31,13 +33,13 @@ export default function LinkFormBlock(): React.ReactElement {
   return (
     <form ref={formRef} className={styles.wrapper} onSubmit={handleSubmit}>
       <Text size={'xl'} className={styles.title}>
-        остались вопросы?
+        {t('blocks.form.title')}
       </Text>
       <div className={styles.inputContainer}>
         <input
           type="text"
           name="name"
-          placeholder="имя"
+          placeholder={t('blocks.form.placeholder1')}
           className={styles.input}
           maxLength={20}
           required
@@ -67,18 +69,18 @@ export default function LinkFormBlock(): React.ReactElement {
         <input
           type="text"
           name="message"
-          placeholder="сообщение"
+          placeholder={t('blocks.form.placeholder2')}
           className={styles.input}
           maxLength={500}
           required
         />
       </div>
       <MainButton type={'submit'} className={styles.submitButton}>
-        отправить
+        {t('blocks.form.button')}
       </MainButton>
       <Text size={'s'} className={styles.warnMessage}>
-        Отправляя форму, вы даете согласие на обработку персональных данных и
-        соглашаетесь c <a href={''}>политикой конфиденциальности</a>
+        {t('blocks.form.warnmessage')}
+        <a href={''}> {t('blocks.form.warnmessagelink')}</a>
       </Text>
     </form>
   );

@@ -19,12 +19,9 @@
 
 .contacts {
   &__container {
+    display: flex;
     position: absolute;
     right: 10px;
-
-    :last-child {
-      margin-left: 16px;
-    }
 
     @include md-block {
       display: none;
@@ -32,6 +29,10 @@
 
     @include xxl-block {
       right: 60px;
+    }
+
+    &__switch {
+      margin-left: 40px;
     }
   }
 }
@@ -49,7 +50,6 @@
 }
 
 .burgerList {
-
   @include md-block-min {
     display: none;
   }
@@ -79,6 +79,13 @@
   &__item {
     width: 100%;
     cursor: pointer;
+
+    &:hover {
+      span {
+        color: $primary-color;
+        transition: color 0.2s;
+      }
+    }
   }
 
   &__footer {
@@ -86,5 +93,11 @@
     justify-content: space-between;
 
     margin-top: 50px;
+
+    &__contact {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
   }
 }

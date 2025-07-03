@@ -64,6 +64,11 @@
   span>a {
     text-decoration: none;
     color: black;
+
+    &:hover {
+      color: $primary-color;
+      transition: 0.3s;
+    }
   }
 
   &IconContainer {

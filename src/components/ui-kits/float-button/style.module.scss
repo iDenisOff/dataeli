@@ -10,4 +10,9 @@
         bottom: 60px;
         right: 80px;
     }
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
 }

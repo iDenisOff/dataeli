@@ -1,0 +1,56 @@
+@use "@/styles/_variables" as *;
+@import "@/styles/customize.scss";
+
+.container {
+  position: relative;
+}
+
+.modal {
+  position: absolute;
+  background-color: white;
+  border-bottom-left-radius: $border-radius-mobile;
+  border-bottom-right-radius: $border-radius-mobile;
+  border: 1px solid $black-25-percent;
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.3s ease,
+  opacity 0.3s ease;
+  z-index: -1;
+
+  &[data-open="true"] {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+.swicthButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  font-size: 14px;
+  color: #666;
+  transition: all 0.2s;
+
+  &:hover {
+    color: #000;
+  }
+
+  &.active {
+    color: #000;
+    font-weight: 800;
+  }
+
+  > img {
+    height: 20px;
+  }
+}

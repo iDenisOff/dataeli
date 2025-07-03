@@ -7,27 +7,26 @@ import cross from '@/public/assets/cross.svg';
 import { useState } from 'react';
 import { Text } from '../ui-kits/text';
 import { ContactsView } from '../contacts';
+import { useTranslation } from 'react-i18next';
+import { LanguageSwitcher } from '../ui-kits/language-switcher';
 
 const menuData = [
   {
-    title: 'услуги',
     hashFragment: 'services',
   },
   {
-    title: 'о компании',
     hashFragment: 'about',
   },
   {
-    title: 'этапы работы',
     hashFragment: 'stages',
   },
   {
-    title: 'обратиться',
     hashFragment: 'linkForm',
   },
 ];
 
 export function HeaderView(): React.ReactElement {
+  const { t } = useTranslation();
   const [isOpenMenu, setOpenMenu] = useState<boolean>(false);
 
   function handleToggleMenu(): void {
@@ -40,6 +39,9 @@ export function HeaderView(): React.ReactElement {
         <img src={logo} alt="Логотип" className={styles.logo} />
         <div className={styles.contacts__container}>
           <ContactsView />
+          <div className={styles.contacts__container__switch}>
+            <LanguageSwitcher />
+          </div>
         </div>
         <img
           src={isOpenMenu ? cross : burger}
@@ -52,16 +54,16 @@ export function HeaderView(): React.ReactElement {
         {menuData.map((item, index) => (
           <HashLink smooth to={`#${item.hashFragment}`} key={index}>
             <div className={styles.burgerList__item}>
-              <Text>{item.title}</Text>
+              <Text>{t(`menu.${item.hashFragment}`)}</Text>
             </div>
           </HashLink>
         ))}
         <div className={styles.burgerList__footer}>
-          <div>
-            <Text>+7 999 99 99</Text>
+          <div className={styles.burgerList__footer__contact}>
+            <ContactsView />
           </div>
           <div>
-            <ContactsView withPhone={false} />
+            <LanguageSwitcher />
           </div>
         </div>
       </div>

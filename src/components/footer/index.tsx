@@ -2,8 +2,10 @@ import styles from './style.module.scss';
 import logo from '@/public/assets/logo.svg';
 import { Text } from '@/components/ui-kits/text';
 import { ContactsView } from '../contacts';
+import { useTranslation } from 'react-i18next';
 
 export function FooterView(): React.ReactElement {
+  const { t } = useTranslation();
   return (
     <div className={styles.container}>
       <img src={logo} alt="Логотип" className={styles.logo} />
@@ -18,9 +20,9 @@ export function FooterView(): React.ReactElement {
           </div>
         </div>
         <div className={styles.additionalInfo}>
-          <Text size={'s'}>ИНН 7751199784</Text>
-          <Text size={'s'}>ООО “ДЭЙТЛИ”</Text>
-          <Text size={'s'}>ОГРН 1217700284042</Text>
+          <Text size={'s'}>{t('blocks.footer.tin')} 7751199784</Text>
+          <Text size={'s'}>{t('blocks.footer.llc')} “DATAELI”</Text>
+          <Text size={'s'}>{t('blocks.footer.psrn')} 1217700284042</Text>
         </div>
       </div>
     </div>

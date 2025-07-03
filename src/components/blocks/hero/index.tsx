@@ -4,8 +4,10 @@ import heroLogo from '@/public/assets/hero-logo.svg';
 import { HeroTitle } from '@/components/blocks/hero/components/hero-title/hero-title';
 import { Text } from '@/components/ui-kits/text';
 import { HashLink } from 'react-router-hash-link';
+import { useTranslation } from 'react-i18next';
 
 export function HeroBlockView(): React.ReactElement {
+  const { t } = useTranslation();
   return (
     <>
       <div className={styles.background}></div>
@@ -15,7 +17,7 @@ export function HeroBlockView(): React.ReactElement {
           <HashLink smooth to="#linkForm">
             <MainButton className={styles.button}>
               <Text color="secondary" size="m">
-                обратиться к нам
+                {t('blocks.hero.main_btn')}
               </Text>
             </MainButton>
           </HashLink>
