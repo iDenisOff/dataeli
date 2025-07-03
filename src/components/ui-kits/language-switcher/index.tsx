@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import styles from './style.module.scss';
 import ruIcon from '@/public/assets/ru.png';
 import enIcon from '@/public/assets/en.png';
@@ -7,7 +7,6 @@ import enIcon from '@/public/assets/en.png';
 export const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
   const navigate = useNavigate();
-  const { lng } = useParams();
 
   const languages = [
     { code: 'ru', label: 'RU', image: ruIcon },
@@ -27,13 +26,11 @@ export const LanguageSwitcher = () => {
   return (
     <div className={styles.container}>
       {languages
-        .filter((langItem) => lng === langItem.code)
+        .filter((langItem) => i18n.language === langItem.code)
         .map((langItem) => (
           <div key={langItem.code}>
             <button
-              className={`${styles.swicthButton} ${
-                lng === langItem.code ? styles.active : ''
-              }`}
+              className={styles.swicthButton}
               onClick={() => handleLanguageChange(langItem.code)}
             >
               <img src={langItem.image} />
