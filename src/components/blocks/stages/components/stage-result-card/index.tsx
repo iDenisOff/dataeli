@@ -22,7 +22,7 @@ export function StageResultCard(): React.ReactElement {
           <div>
             <Text>
               <Text color="secondary">
-                {t(`blocks.stages.result.notes1_1`)}
+                {`${t(`blocks.stages.result.notes1_1`)} `}
               </Text>
               {t(`blocks.stages.result.notes1_2`)}
             </Text>
@@ -31,7 +31,7 @@ export function StageResultCard(): React.ReactElement {
             <Text>
               {t(`blocks.stages.result.notes2_1`)}
               <Text color="secondary">
-                {t(`blocks.stages.result.notes2_2`)}
+                {`${t(`blocks.stages.result.notes2_2`)} `}
               </Text>
               {t(`blocks.stages.result.notes2_3`)}
             </Text>

@@ -10,10 +10,14 @@
   border: 2px solid $primary-color-opacity;
   padding: $spacing-sm;
   cursor: pointer;
+  will-change: transform;
+  height: 80px;
 
   @include md-block {
     border-radius: $border-radius-mobile;
     padding: $spacing-xs;
+    height: 60px;
+
   }
 
   &:hover {
@@ -21,6 +25,7 @@
     border: 0;
     transform: scale(1.01);
     transition: 0.3s;
+
 
     span {
       color: white !important;

@@ -11,13 +11,13 @@ export function FooterView(): React.ReactElement {
       <img src={logo} alt="Логотип" className={styles.logo} />
       <div className={styles.info}>
         <div className={styles.contacts}>
+          <div className={styles.contactsIconContainer}>
+            <ContactsView withPhone={false} size="xl" />
+          </div>
           <Text size={'m'}>
             <a href="tel:+74997148152">+7 499 714 81 52</a>
           </Text>
           <Text size={'m'}>support@dataeli.com</Text>
-          <div className={styles.contactsIconContainer}>
-            <ContactsView withPhone={false} />
-          </div>
         </div>
         <div className={styles.additionalInfo}>
           <Text size={'s'}>{t('blocks.footer.tin')} 7751199784</Text>

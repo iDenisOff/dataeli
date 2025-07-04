@@ -61,6 +61,10 @@
     margin-bottom: $spacing-md;
   }
 
+  span:last-child {
+    margin-bottom: 0;
+  }
+
   span>a {
     text-decoration: none;
     color: black;
@@ -73,22 +77,12 @@
 
   &IconContainer {
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: 12px;
-    margin: $spacing-xs;
-
-    :last-child {
-      margin-left: 16px;
-    }
-
-    &Icon {
-      @include xxl-block-min {
-        width: 50px;
-      }
-    }
+    margin-bottom: $spacing-xs;
   }
 
   @include xxl-block-min {
-    align-self: center;
+    align-self: end;
   }
 }
