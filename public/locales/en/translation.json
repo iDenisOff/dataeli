@@ -1,0 +1,200 @@
+{
+  "name": "DATAELI",
+  "menu": {
+    "services": "services",
+    "about": "about",
+    "stages": "workflow stages",
+    "linkForm": "contact us"
+  },
+  "blocks": {
+    "hero": {
+      "title1": "how confident are you",
+      "title2": "in ",
+      "title3": "the security",
+      "title4": "of your own information assets?",
+      "main_btn": "contact us"
+    },
+    "services": {
+      "title": "our services",
+      "data": [
+        {
+          "title": "internal pentest (black/grey/white box)",
+          "description": "assessment of corporate network security from inside",
+          "fullDescription": "assessment of corporate network security from inside. we use different access models: from no data to providing accounts and network diagrams. we check escalation paths, privileges, configuration security, and network segmentation"
+        },
+        {
+          "title": "external pentest",
+          "description": "analysis of the company's perimeter from the internet side",
+          "fullDescription": "analysis of the company's perimeter from the internet side. searching for vulnerabilities in services, open ports, web interfaces, and access gateways. risk assessment of unauthorized external intrusion"
+        },
+        {
+          "title": "OSINT",
+          "description": "collection and analysis of information from open sources",
+          "fullDescription": "collection and analysis of information from open sources: corporate leaks, open configurations, DNS, employee mentions, internal documents, passwords, etc. used as part of attack preparation"
+        },
+        {
+          "title": "employee training in attack countermeasures",
+          "description": "conducting practical training sessions for IT, SOC, and cybersecurity teams",
+          "fullDescription": "conducting practical training sessions for IT, SOC, and cybersecurity teams on recognizing hacking techniques, incident response, and protection against targeted attacks. presenting real cybersecurity attack cases"
+        },
+        {
+          "title": "phishing and social engineering employee testing",
+          "description": "simulation of phishing campaigns and social engineering scenarios",
+          "fullDescription": "simulation of phishing campaigns and social engineering scenarios to assess staff resilience. sending email messages and influencing employees with subsequent analysis and training"
+        },
+        {
+          "title": "Wi-Fi security testing",
+          "description": "analysis of wireless network security",
+          "fullDescription": "analysis of wireless network security. WiFi is one of the easiest ways to penetrate the company's internal network"
+        },
+        {
+          "title": "web application pentest",
+          "description": "testing web applications and APIs for vulnerabilities",
+          "fullDescription": "testing web applications and APIs for vulnerabilities: XSS, SQLi, CSRF, RCE, CMDI, XXE, IDOR, SSRF, and others. includes manual and automated analysis"
+        }
+      ]
+    },
+    "about": [
+      {
+        "title": "about",
+        "secondtitle": "why us",
+        "info": {
+          "subtitle": "— a team of specialists and researchers focused on\npractical information security"
+        },
+        "data": [
+          {
+            "text": "our comprehensive penetration testing services allow you to be confident that\nIT infrastructure and data are protected from unauthorized access, and\nprotect yourself from financial, business, and reputational risks"
+          },
+          {
+            "text": "we are a group of experts in digital system protection.\nspecialize in technical vulnerability analysis, corporate infrastructure resilience testing, and cybersecurity project support"
+          },
+          {
+            "text": "unlike companies focused on formal reports, we\nwork directly with client teams, delving into details and promptly\nresponding to real risks"
+          }
+        ]
+      },
+      {
+        "data": [
+          {
+            "title": "goal",
+            "text": "to provide organizations with stable digital asset protection, minimizing threats and increasing business resilience to cyber incidents"
+          },
+          {
+            "title": "prospects",
+            "text": "we strive to become a key technical partner in information security for companies valuing expertise, technology, and integrity"
+          },
+          {
+            "title": "principles",
+            "text": "we build our work on five main principles: professionalism, openness, efficiency, innovation, and growth aspiration. these form the foundation of our approach"
+          }
+        ]
+      },
+      {
+        "title": "what sets us apart",
+        "data": [
+          {
+            "number": "01",
+            "title": "victories and prizes at international CTF tournaments",
+            "text": "our specialists have won prizes at international cybersecurity competitions, including Standoff"
+          },
+          {
+            "number": "02",
+            "title": "specialist certification",
+            "text": "the team includes professionals with international certifications, including OSCP, OSEP, OSWE, and others"
+          },
+          {
+            "number": "03",
+            "title": "accredited company",
+            "text": "the company is state-accredited in the IT field"
+          }
+        ]
+      },
+      {
+        "title": "also",
+        "data": [
+          {
+            "number": "04",
+            "title": "think like hackers",
+            "text": "we use modern security assessment techniques: from threat modeling and manual configuration analysis to simulating real attacker actions. we apply Red Team principles and current frameworks and proprietary products"
+          },
+          {
+            "number": "05",
+            "title": "open to experience exchange",
+            "text": "upon request, we conduct in-person or online sessions for client IT and cybersecurity specialists. we show how to find and fix critical errors that may lead to infrastructure compromise"
+          },
+          {
+            "number": "06",
+            "title": "create tools for real tasks",
+            "text": "we develop IT solutions"
+          },
+          {
+            "number": "07",
+            "title": "ensure an individual approach",
+            "text": "we do not work by templates. we consider the technical landscape and internal processes, discuss individual conditions, and select a work format for specific tasks"
+          }
+        ]
+      },
+      {
+        "title": "DATAELI team",
+        "preinfo": "the key feature of our company is specialists with real\npractical experience in cybersecurity",
+        "postinfo": "we constantly learn, share knowledge, and hone our skills to\nstay at the forefront of digital security",
+        "data": [
+          {
+            "text": "pentesters with experience in government and private companies"
+          },
+          {
+            "text": "experts in code analysis and vulnerability discovery"
+          },
+          {
+            "text": "secure solution architects and DevSecOps engineers"
+          },
+          {
+            "text": "developers of internal automation products"
+          }
+        ]
+      }
+    ],
+    "stages": {
+      "title": "workflow stages",
+      "prepare": [
+        {
+          "number": "01",
+          "title": "agree on goals",
+          "subtitle": "discuss the specifics \nof your situation and define upcoming tasks"
+        },
+        {
+          "number": "02",
+          "title": "jointly develop technical specification",
+          "subtitle": "define the list of information assets for security assessment\ndefine allowed techniques, tactics, and approaches to security assessment\nformulate requirements and obligations of the parties\ndocument the agreed terms"
+        },
+        {
+          "number": "03",
+          "title": "start security assessment",
+          "subtitle": "act according to the agreed technical specification"
+        }
+      ],
+      "result": {
+        "number": "04",
+        "title": "based on the results of the activities, provide two reports",
+        "notes1_1": "detailed technical,",
+        "notes1_2": "containing\na detailed description of the activities performed, identified deficiencies\nand recommendations for their elimination",
+        "notes2_1": "high-level ",
+        "notes2_2": "for management,",
+        "notes2_3": "containing key conclusions and results of the security assessment activities"
+      }
+    },
+    "form": {
+      "title": "Still have questions?",
+      "placeholder1": "name",
+      "placeholder2": "message",
+      "button": "send",
+      "warnmessage": "By submitting the form, you consent to the processing of personal data and agree to the ",
+      "warnmessagelink": "privacy policy"
+    },
+    "footer": {
+      "tin": "TIN",
+      "llc": "LLC",
+      "psrn": "PSRN"
+    }
+  }
+}
