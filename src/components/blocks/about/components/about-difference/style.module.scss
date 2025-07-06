@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: $spacing-xs;
-  padding: $spacing-md;
+  padding: $spacing-sm;
   background-color: $primary-grey;
   border-radius: $border-radius-mobile;
 
@@ -47,7 +47,11 @@
 
 .textNumber {
   display: block;
-  color: white;
+  color: $primary-color;
   font-weight: 600;
   margin-bottom: $spacing-sm;
+}
+
+.text {
+  text-align: justify;
 }

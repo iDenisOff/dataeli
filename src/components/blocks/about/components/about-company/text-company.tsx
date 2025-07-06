@@ -19,21 +19,28 @@ export default function AboutCompany(): React.ReactElement {
           className={styles.backgroundImage}
         />
       </div>
-      <Text size={'xl'} className={styles.title}>
-        {t('blocks.about.0.secondtitle')}
-      </Text>
-      {[...Array(ABOUT_BLOCKS_COUNT)].map((_, index) => (
-        <div key={index}>
-          <Text size={'m'} className={styles.text}>
-            {t(`blocks.about.0.data.${index}.text`)}
-          </Text>
-          {index != ABOUT_BLOCKS_COUNT - 1 ? (
-            <hr className={styles.line} />
-          ) : (
-            <div className={styles.lastBlock}></div>
-          )}
-        </div>
-      ))}
+      <div className={styles.container}>
+        <Text size={'xl'} className={styles.title}>
+          {t('blocks.about.0.secondtitle')}
+        </Text>
+        {[...Array(ABOUT_BLOCKS_COUNT)].map((_, index) => (
+          <div key={index}>
+            <Text size={'m'} className={styles.text}>
+              {t(`blocks.about.0.data.${index}.text`)}
+            </Text>
+            {index != ABOUT_BLOCKS_COUNT - 1 ? (
+              <hr className={styles.line} />
+            ) : (
+              <div className={styles.lastBlock}></div>
+            )}
+          </div>
+        ))}
+        <img
+          src={backgroundShapeOne}
+          alt="backgroundShapeOne"
+          className={styles.backgroundImageTwo}
+        />
+      </div>
     </div>
   );
 }

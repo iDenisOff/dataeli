@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 export default function AboutDifference(): React.ReactElement {
   const { t } = useTranslation();
   // length from i18n
-  const ABOUT_DIFF_COUNT = 3;
+  const ABOUT_DIFF_COUNT = 7;
   return (
     <div className={styles.container}>
       {[...Array(ABOUT_DIFF_COUNT)].map((_, index) => (

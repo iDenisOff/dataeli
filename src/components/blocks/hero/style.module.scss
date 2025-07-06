@@ -57,7 +57,11 @@
   width: 456px;
 
   @include sm-block {
-    width: 300px;
+    width: 100%;
   }
 
+}
+
+.buttonContainer {
+  text-align: center;
 }

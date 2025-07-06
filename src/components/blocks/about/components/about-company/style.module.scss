@@ -34,6 +34,19 @@
     left: 600px;
     top: 0px;
   }
+
+  &Two {
+    position: absolute;
+    bottom: -100px;
+    left: -160px;
+
+    @include md-block-min {
+      width: 400px;
+      height: auto;
+      bottom: -100px;
+      left: -160px;
+    }
+  }
 }
 
 .line {

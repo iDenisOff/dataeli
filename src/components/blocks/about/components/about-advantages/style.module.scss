@@ -3,6 +3,7 @@
 
 
 .container {
+  margin-top: 10px;
   @include xxl-block-min {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -15,7 +16,6 @@
       width: calc(50% - $spacing-sm / 2);
     }
   }
-
 }
 
 .block {
@@ -44,6 +44,8 @@
 
 .title {
   margin-bottom: $spacing-sm;
+  color: $primary-color;
+  font-weight: 500;
 }
 
 .textNumber {

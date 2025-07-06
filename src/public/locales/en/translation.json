@@ -18,7 +18,7 @@
       "title": "our services",
       "data": [
         {
-          "title": "internal pentest (black/grey/white box)",
+          "title": "internal pentest",
           "description": "assessment of corporate network security from inside",
           "fullDescription": "assessment of corporate network security from inside. we use different access models: from no data to providing accounts and network diagrams. we check escalation paths, privileges, configuration security, and network segmentation"
         },
@@ -106,12 +106,7 @@
             "number": "03",
             "title": "accredited company",
             "text": "the company is state-accredited in the IT field"
-          }
-        ]
-      },
-      {
-        "title": "also",
-        "data": [
+          },
           {
             "number": "04",
             "title": "think like hackers",

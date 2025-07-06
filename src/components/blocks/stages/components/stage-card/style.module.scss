@@ -4,13 +4,13 @@
 .container {
   background-color: $primary-grey;
   border-radius: $border-radius;
-  padding: 60px 140px;
+  padding: $spacing-md;
   display: flex;
   justify-content: space-between;
   gap: 20px;
 
   @include md-block {
-    padding: 28px 28px;
+    padding: $spacing-sm;
     flex-direction: column;
     gap: 10px;
     margin: 0 10px;
@@ -34,4 +34,8 @@
   @include md-block {
     display: none;
   }
+}
+
+.subtitle {
+  text-align: justify;
 }

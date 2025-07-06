@@ -2,7 +2,7 @@
 @import "@/styles/customize.scss";
 
 .container {
-  padding: $spacing-md;
+  padding: $spacing-sm;
   background-color: $primary-grey;
   border-radius: $border-radius-mobile;
 
@@ -23,6 +23,7 @@
 
 .title {
   margin-bottom: $spacing-sm;
+  color: $primary-color;
 
   @include xxl-block-min {
     margin-bottom: $spacing-md;

@@ -7,34 +7,36 @@ export function StageResultCard(): React.ReactElement {
   const { t } = useTranslation();
   return (
     <div className={styles.container}>
-      <div className={styles.infoBlock}>
-        <div>
-          <Text color="secondary" size="xl">
-            {t(`blocks.stages.result.number`)}
-          </Text>
-        </div>
-        <div>
-          <Text size="xl">{t(`blocks.stages.result.title`)}</Text>
-        </div>
-      </div>
       <div className={styles.notesContainer}>
         <div className={styles.notesBox}>
-          <div>
-            <Text>
-              <Text color="secondary">
-                {`${t(`blocks.stages.result.notes1_1`)} `}
+          <div className={styles.infoBlock}>
+            <div>
+              <Text color="secondary" size="xl">
+                {t(`blocks.stages.result.number`)}
               </Text>
-              {t(`blocks.stages.result.notes1_2`)}
-            </Text>
+            </div>
+            <div>
+              <Text size="xl">{t(`blocks.stages.result.title`)}</Text>
+            </div>
           </div>
-          <div>
-            <Text>
-              {t(`blocks.stages.result.notes2_1`)}
-              <Text color="secondary">
-                {`${t(`blocks.stages.result.notes2_2`)} `}
+          <div className={styles.notes}>
+            <div>
+              <Text>
+                <Text color="secondary">
+                  {`${t(`blocks.stages.result.notes1_1`)} `}
+                </Text>
+                {t(`blocks.stages.result.notes1_2`)}
               </Text>
-              {t(`blocks.stages.result.notes2_3`)}
-            </Text>
+            </div>
+            <div>
+              <Text>
+                {t(`blocks.stages.result.notes2_1`)}
+                <Text color="secondary">
+                  {`${t(`blocks.stages.result.notes2_2`)} `}
+                </Text>
+                {t(`blocks.stages.result.notes2_3`)}
+              </Text>
+            </div>
           </div>
         </div>
         <div>

@@ -15,11 +15,13 @@ export function HeroBlockView(): React.ReactElement {
         <div className={styles.banner}>
           <HeroTitle />
           <HashLink smooth to="#linkForm">
-            <MainButton className={styles.button}>
-              <Text color="secondary" size="m">
-                {t('blocks.hero.main_btn')}
-              </Text>
-            </MainButton>
+            <div className={styles.buttonContainer}>
+              <MainButton className={styles.button}>
+                <Text color="secondary" size="l">
+                  {t('blocks.hero.main_btn')}
+                </Text>
+              </MainButton>
+            </div>
           </HashLink>
         </div>
         <div className={styles.heroLogo}>

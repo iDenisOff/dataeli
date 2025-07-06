@@ -4,22 +4,18 @@
 .card {
     background-color: $primary-grey;
     padding: $spacing-xxl;
-    height: 491px;
     border-radius: $border-radius;
 
     @include xxl-block {
         border-radius: 0;
         padding: $spacing-md;
     }
-
-    @include md-block {
-        height: 280px;
-    }
 }
 
 .title {
     display: block;
     margin-bottom: $spacing-sm;
+    font-weight: 600;
 }
 
 .fullDescription {
@@ -32,17 +28,18 @@
 
 .nextButton {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     bottom: $spacing-xl;
     right: $spacing-xl;
 
     @include lg-block {
-        bottom: $spacing-sm;
-        right: $spacing-sm;
+        bottom: 10px;
+        right: 10px;
     }
 
-    opacity: 50%;
+    border: 1px solid $primary-color;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,6 +58,10 @@
         width: 25px;
         height: 25px;
     }
+
+    &Reverse {
+      transform: rotate(180deg);
+    }
 }
 
 .contentWrapper {
@@ -71,6 +72,20 @@
         overflow: hidden;
         height: auto;
         min-height: 150px;
+    }
+
+    &__desktop {
+      @include md-block {
+        display: none;
+      }
+
+
+    }
+
+    &__mobile {
+      @include md-block-min {
+          display: none;
+      }
     }
 }
 
@@ -109,4 +124,13 @@
     transform: translateX(100%);
     opacity: 0;
     z-index: 1;
+}
+
+.contentContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  &__img {
+    height: 130px;
+  }
 }

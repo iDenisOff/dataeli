@@ -17,9 +17,9 @@ export function StageCard(props: StageCardProps): React.ReactElement {
           </Text>
         </div>
         <div>
-          <Text size="l">{item.title}</Text>
+          <Text size="xl">{item.title}</Text>
         </div>
-        <div>
+        <div className={styles.subtitle}>
           <Text>{item.subtitle}</Text>
         </div>
       </div>
