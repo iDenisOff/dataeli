@@ -1,6 +1,7 @@
 import styles from './style.module.scss';
 import { Text } from '@/components/ui-kits/text';
-import backgroundShapeOne from '@/public/assets/background-shape-one.png';
+import blobOne from '@/public/assets/blob-1.svg';
+import blobTwo from '@/public/assets/blob-2.svg';
 import { useTranslation } from 'react-i18next';
 
 export default function AboutCompany(): React.ReactElement {
@@ -13,11 +14,7 @@ export default function AboutCompany(): React.ReactElement {
           {`${t('name')}${' '}`}
         </Text>
         <Text size={'l'}>{t('blocks.about.0.info.subtitle')}</Text>
-        <img
-          src={backgroundShapeOne}
-          alt="backgroundShapeOne"
-          className={styles.backgroundImage}
-        />
+        <img src={blobOne} alt="blobOne" className={styles.backgroundImage} />
       </div>
       <div className={styles.container}>
         <Text size={'xl'} className={styles.title}>
@@ -36,8 +33,8 @@ export default function AboutCompany(): React.ReactElement {
           </div>
         ))}
         <img
-          src={backgroundShapeOne}
-          alt="backgroundShapeOne"
+          src={blobTwo}
+          alt="blobTwo"
           className={styles.backgroundImageTwo}
         />
       </div>

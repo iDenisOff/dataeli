@@ -1,7 +1,7 @@
 import styles from './style.module.scss';
 import { Text } from '@/components/ui-kits/text';
 import { useTranslation } from 'react-i18next';
-import backgroundShapeOne from '@/public/assets/background-shape-one.png';
+import blobThree from '@/public/assets/blob-3.svg';
 
 export default function AboutCommand(): React.ReactElement {
   const { t } = useTranslation();
@@ -22,11 +22,7 @@ export default function AboutCommand(): React.ReactElement {
       <Text size={'m'} className={styles.block}>
         {t(`blocks.about.3.postinfo`)}
       </Text>
-      <img
-        src={backgroundShapeOne}
-        alt="backgroundShapeOne"
-        className={styles.backgroundImage}
-      />
+      <img src={blobThree} alt="blobThree" className={styles.backgroundImage} />
     </div>
   );
 }

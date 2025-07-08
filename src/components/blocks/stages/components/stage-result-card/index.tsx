@@ -16,7 +16,7 @@ export function StageResultCard(): React.ReactElement {
               </Text>
             </div>
             <div>
-              <Text size="xl">{t(`blocks.stages.result.title`)}</Text>
+              <Text size="l">{t(`blocks.stages.result.title`)}</Text>
             </div>
           </div>
           <div className={styles.notes}>
