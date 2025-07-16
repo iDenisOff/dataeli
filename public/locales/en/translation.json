@@ -3,7 +3,7 @@
   "menu": {
     "services": "services",
     "about": "about",
-    "stages": "workflow stages",
+    "news": "news",
     "linkForm": "contact us"
   },
   "blocks": {
@@ -192,7 +192,7 @@
       "psrn": "PSRN"
     },
     "news": {
-      "title": "new",
+      "title": "news",
       "data": [
         {
           "date": "april 2025",
