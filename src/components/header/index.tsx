@@ -18,7 +18,7 @@ const menuData = [
     hashFragment: 'about',
   },
   {
-    hashFragment: 'stages',
+    hashFragment: 'news',
   },
   {
     hashFragment: 'linkForm',
