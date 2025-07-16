@@ -1,0 +1,35 @@
+@use "@/styles/_variables" as *;
+@import "@/styles/customize.scss";
+
+.container {
+    background-color: $primary-grey;
+    border-radius: $border-radius-mobile;
+    padding: $spacing-sm;
+    margin-right: $spacing-xs;
+    height: 400px;
+    margin-bottom: $spacing-xs;
+
+    @include lg-block {
+        height: 325px;
+    }
+}
+
+.title {
+    display: block;
+    margin-bottom: $spacing-sm;
+}
+
+.text {
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.link {}
+
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+}

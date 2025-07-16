@@ -1,0 +1,26 @@
+@use "@/styles/_variables" as *;
+@import "@/styles/customize.scss";
+
+.dots {
+    display: flex;
+}
+
+.dot {
+    font-size: $font-size-l;
+    color: $primary-grey;
+    margin: 0;
+
+    @include lg-block-min {
+        font-size: $font-size-xl;
+    }
+}
+
+:global(.slick-dots li.slick-active > div) {
+    color: $primary-color;
+}
+
+:global(.slick-dots li) {
+    @include lg-block {
+        margin: 0 !important;
+    }
+}

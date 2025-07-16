@@ -179,7 +179,7 @@
       }
     },
     "form": {
-      "title": "Still have questions?",
+      "title": "still have questions?",
       "placeholder1": "name",
       "placeholder2": "message",
       "button": "send",
@@ -190,6 +190,71 @@
       "tin": "TIN",
       "llc": "LLC",
       "psrn": "PSRN"
+    },
+    "news": {
+      "title": "new",
+      "data": [
+        {
+          "date": "april 2025",
+          "text": "attackers hacked europcar's gitlab, stole the companies' android/ios source code and data of up to 200,000 customers, threats to release 37 gb of data"
+        },
+        {
+          "date": "march 2025",
+          "text": "salt typhoon attacks canadian telecom provider vulnerability in cisco ios xe. a major cybersecurity breach has been discovered, resulting from a successful hack of a major canadian telecommunications provider by the salt typhoon group. the chinese state-sponsored apt group exploited a known vulnerability cve-2023-20198 in cisco ios xe, allowing it to gain privileged access to the company's network devices and conduct significant cyber espionage operations"
+        },
+        {
+          "date": "march 2025",
+          "text": "the largest manufacturer of network equipment keenetic faced a large-scale leak of users' personal data. as a result of a hacker attack, intruders gained access to confidential information, including passwords to wi-fi networks, which threatens the security of millions of russians"
+        },
+        {
+          "date": "march 2025",
+          "text": "roskomnadzor identified 19 cases of personal data leaks in march 2025. more than 24 million records were leaked online. this was reported to tass by the agency's press service"
+        },
+        {
+          "date": "march 2025",
+          "text": "residents of houses of the largest russian developer 'pik' in moscow and st. petersburg were left without home internet. the reason was a large-scale ddos attack aimed at the provider lovit, which services these houses. among the new buildings cut off from the network: green park, 'salaryevo park', 'nikolskie luga', 'matveevsky park', 'mitinsky forest', 'myakinino park' and others"
+        },
+        {
+          "date": "february 2025",
+          "text": "hackers believed to be affiliated with lazarus group stole $1.46 billion in eth from bybit's cold wallet, the largest crypto attack in history"
+        },
+        {
+          "date": "october 2024",
+          "text": "ukrainian hacker group dumpforums announced that they had hacked the it infrastructure of dr.web, one of russia's leading antivirus software developers. according to them, they had been in the company's network for over a month and during that time stole over 10 tb of data, including internal developments, projects, and databases"
+        },
+        {
+          "date": "october 2024",
+          "text": "a major cyberattack has taken place, causing widespread resonance in russia. hackers have broken into the gas pravosudie, a state system used to manage judicial proceedings, and have paralyzed the work of several major russian media outlets, including vgtrk. this incident has attracted the attention of not only the russian authorities, but also the international community"
+        },
+        {
+          "date": "august 2024",
+          "text": "one of the largest leaks of personal data in history has come to light, involving national public data (npd). the company collects and sells personal information for background checks, criminal records searches, and private detective work. hackers published a huge data set on the breached forum — 2.7 billion records containing names, social security numbers, addresses, and online aliases of people in the united states and other countries. the data, posted in plain text format, took up 277 gb and was accessible to attackers"
+        },
+        {
+          "date": "april 2024",
+          "text": "a major data breach has occurred, affecting around 165 customers of us cloud storage company snowflake. the affected customers include major organisations such as ticketmaster, santander and at&t. the compromised data included personal information, banking records and call logs"
+        },
+        {
+          "date": "march 2024",
+          "text": "hackers attacked the computer infrastructure of lukoil — according to a source at rbc, it was a ransomware virus attack. roskomnadzor confirmed the attack data"
+        },
+        {
+          "date": "march 2024",
+          "text": "information has emerged about a hack of the national bureau of credit histories (nbch). hackers claim to have stolen more than 200 million lines of data from the organization. nbch representatives claim that the leak did not occur from their database, but 'this does not mean that the data that appeared in the public domain is false'"
+        },
+        {
+          "date": "february 2024",
+          "text": "in 2024, a major data leak was discovered from discord, a platform with instant messaging, chat, voice and video conferencing features. the online service spy pet collected data from 14,000 discord servers and sold access to them for cryptocurrency. according to discord developers, at the time of the disclosure, the service had collected about 3 billion messages, covering information on 600 million users"
+        },
+        {
+          "date": "february 2024",
+          "text": "attack by the blackcat (alphv) hacker group on unitedhealth group. aftermath: the largest cyberattack on the us healthcare sector, paralyzing the payment system. the company paid a ransom of $22 million"
+        },
+        {
+          "date": "january 2024",
+          "text": "microsoft has announced that a number of its corporate email accounts were hacked and data stolen by the russian-speaking hacker group midnight blizzard (aka nobelium, apt29, and cozy bear). the hackers spent more than a month in the system and compromised the email accounts of microsoft executives, legal staff, and cybersecurity specialists. according to microsoft, the attackers penetrated the system back in november 2023, after they carried out a successful brute-force password spray attack"
+        }
+      ]
     }
   }
 }

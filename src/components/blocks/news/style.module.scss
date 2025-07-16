@@ -1,0 +1,14 @@
+@use "@/styles/_variables" as *;
+@import "@/styles/customize.scss";
+
+.wrapper{
+    padding: 0 $spacing-xs;
+    margin-bottom: $spacing-md;
+}
+
+.title {
+    margin-left: $spacing-md;
+    margin-bottom: $spacing-md;
+    display: block;
+    font-weight: 600;
+}

@@ -1,0 +1,17 @@
+export const newsLinks = [
+  'https://www.cm-alliance.com/cybersecurity-blog/april-2025-major-cyber-attacks-ransomware-attacks-and-data-breaches?utm_source=chatgpt.com',
+  'https://www.cm-alliance.com/cybersecurity-blog/february-2025-major-cyber-attacks-ransomware-attacks-data-breaches?utm_source=chatgpt.com',
+  'https://www.securitylab.ru/news/557605.php',
+  'https://www.rbc.ru/rbcfreenews/67ceafbf9a7947ad5689e4b2?ysclid=mcxnj41n4135632509',
+  'https://xakep.ru/2025/03/24/nelovit/',
+  'https://breached.company/global-cybersecurity-incident-review-january-april-2025/?utm_source=chatgpt.com',
+  'https://xakep.ru/2024/10/09/dumpforums-dr-web/',
+  'https://www.rbc.ru/society/08/10/2024/670515429a794748d075103b',
+  'https://www.infowatch.ru/analytics/utechki-informatsii/utechka-personalnoy-informatsii-milliardov-chelovek',
+  'https://www.securitylab.ru/news/549555.php?utm_referrer=https%3A%2F%2Fwww.perplexity.ai%2F',
+  'https://www.rbc.ru/technology_and_media/26/03/2025/67e3d73e9a79478fad7d668e',
+  'https://xakep.ru/2024/03/15/nkbi-leak/',
+  'https://leakd.com/leaks/massive-discord-data-breach-nearly-1-million-users-exposed-in-restorecord-leak/',
+  'https://www.kaspersky.ru/blog/unitedhealth-ransowmare-attack/39033/',
+  'https://xakep.ru/2024/01/22/apt29-microsoft/',
+];

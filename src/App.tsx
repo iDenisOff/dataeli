@@ -12,6 +12,7 @@ import {
   useParams,
 } from 'react-router-dom';
 import LinkFormBlock from './components/blocks/link-form';
+import { NewsBlockView } from './components/blocks/news';
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
@@ -45,9 +46,12 @@ const App: React.FC = () => {
                 <div id="about">
                   <AboutBlockView />
                 </div>
-                <div id="stages">
-                  <StagesBlock />
+                <div id="news">
+                  <NewsBlockView />
                 </div>
+                {/* <div id="stages">
+                  <StagesBlock />
+                </div> */}
                 <div id="linkForm">
                   <LinkFormBlock />
                 </div>
